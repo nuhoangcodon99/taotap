@@ -45,7 +45,7 @@ const app = new Vue({
   el: "#app",
   data: {
     showLogo: true,
-    logo: "/imgs/logo.png",
+    logo: "./imgs/logo.png",
     logoSize: 250,
 
     url: "https://www.facebook.com/bengokyeuanh.99",

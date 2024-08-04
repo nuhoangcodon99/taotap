@@ -24,7 +24,7 @@ const readFile = file => {
 
 const getBackgrounds = () => {
   const backgrounds = [
-    "./imgs/1.jpeg", "./imgs/2.jpeg", "./imgs/3.jpeg", "./imgs/4.jpeg", "/imgs/5.jpeg", "/imgs/6.jpeg"
+    "/imgs/1.jpeg", "/imgs/2.jpeg", "/imgs/3.jpeg", "/imgs/4.jpeg", "/imgs/5.jpeg", "/imgs/6.jpeg"
   ];
 
   return Promise.all(backgrounds.map(bg => toDataURL(bg)));
@@ -45,7 +45,7 @@ const app = new Vue({
   el: "#app",
   data: {
     showLogo: true,
-    logo: "./imgs/logo.png",
+    logo: "/imgs/logo.png",
     logoSize: 250,
 
     url: "https://www.facebook.com/bengokyeuanh.99",
